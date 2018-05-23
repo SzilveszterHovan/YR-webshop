@@ -6,5 +6,8 @@ body {
 }
 
 div {
-	background-color: lightgray;
+	background: #898989;
+	color: #fff;
+	padding: 100px;
+	margin-top: 1px;
 }
