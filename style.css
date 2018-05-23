@@ -17,12 +17,12 @@
 	}
 
 	select {
-		color: green;
-		background-color: #330000;
+		color: black;
+		background-color: darkolivegreen;
 		font-size: 20px;
 	}
 
 	select:hover {
 		text-decoration: none;
-		color: red;
+		background-color: olive;
 	}
