@@ -78,6 +78,18 @@ for (var c=0; c<emailObj.length; c++){
 emailTable=emailTable+"</table>"
 document.getElementById('content').innerHTML =emailTable;
 }
+function termekarak(termekarakobj){
+	console.log(termekarakobj)
+	var termekarakTable = "<table><tr><th>Ár</th></tr>"
+	for (var q =0; q<termekarakobj.length;q++){
+		var termekarak1 = termekarakobj[q];
+		termekarakTable=termekarakTable+"<tr><td>"+termekarak1.osszeg+"</td></tr>"
+
+	}
+termekarakTable	=termekarakTable+"</table>"
+document.getElementById('content').innerHTML =termekarakTable;
+}
+
 
 function dropdownChanged () {
 	   var kivalasztottErtek = document.getElementById("lekerdezes").value;
@@ -125,6 +137,10 @@ function dropdownChanged () {
 			case "Hirlevel" :
 				var sqlText = "SELECT vasarlo.nev, vasarlo.email FROM vasarlo LEFT JOIN rendeles ON vasarlo.id=rendeles.vasarlo_id WHERE rendeles.id is null and vasarlo.hirlevel <>0";
 				sql(sqlText,email,refreshDocument);
+				break;
+				case"termekarak" :
+				var sqlText = "SELECT SUM(ar*keszlet) as osszeg FROM termek";
+				sql(sqlText,termekarak,refreshDocument)
 				break;
 				
 			default : 
