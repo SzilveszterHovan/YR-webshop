@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chilipaprika webshop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="client2.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <select name="lekerdezes" id="lekerdezes" onchange="dropdownChanged()">
+        <option value="" selected>Kérem válasszon lekérdezést</option>
+        <option value="OsszesTermek">Összes termék kilistázása</option>
+        <option value="RendezesNevASC">Termékek rendezése ábécé szerint növekvő sorrendben</option>
+        <option value="RendezesNevDesc">Termékek rendezése ábécé szerint csökkenő sorrendben</option>
+        <option value="RendezesEroASC">Termékek rendezése paprika csípőssége szerint növekvő sorrendben</option>
+        <option value="RendezesEroDesc">Termékek rendezése paprika csípőssége szerint csökkenő sorrendben</option>
+        <option value="RendezesArASC">Termékek rendezése ár szerint növekvő sorrendben</option>
+        <option value="RendezesArDesc">Termékek rendezése ár szerint csökkenő sorrendben</option>
+        <option value="RendezesNepszeru">Termékek rendezése népszerűség szerint</option>
+        <option value="legtobbVevoHavi">Melyik vásárlónk rendelt előző hónapokban a legnagyobb értékben (havi lebontásban)?</option>
+        <option value="legtobbVevo">Ki az eddigi legtöbbet vásárló vevőnk?</option>
+        <option value="Hirlevel">Melyek azok a vevőik, akik kértek hírlevelet, de még nem vásároltak?</option>
+
+    </select>
+    <div id="content"></div>
+
+</body>
+
+</html>

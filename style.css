@@ -1,0 +1,10 @@
+body {
+	background: url(../images/pepper.jpg);
+	color: black;
+	font-family: arial, sans-serif;
+	font-size: 20px;
+}
+
+div {
+	background-color: lightgray;
+}
